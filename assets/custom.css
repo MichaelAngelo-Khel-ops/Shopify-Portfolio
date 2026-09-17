@@ -65,5 +65,45 @@ button:-moz-focusring,
   box-shadow: none;
 }
 
+:root {
+  --color-primary-text: #92998C;
+  --color-secondary-text: #A9C97E;
+  --color-background: #1C1F19;
+  --color-foreground: #DAD8CC;
+  --color-border: #2A3126;
+  --color-heading: #F1EFE7;
+
+  /* button */
+  --color-primary-button-text: #10130F;
+  --color-primary-button-background: #6E8F52;
+  --color-primary-button-border: #92998C;
+  --color-primary-button-hover-text: #A9C97E;
+  --color-primary-button-hover-background: #DAD8CC;
+
+}
 
 /* css color variables */
+  .light-mode {
+
+    /* text */
+    --color-background: #DAD8CC;
+    --color-foreground: #1C1F19;
+    --color-border: #DAD8CC;
+    --color-primary-text: #1C1F19;
+    --color-secondary-text: #6B6F63;
+
+
+    /* button */
+    --color-primary-button-text: #1C1F19;
+    --color-primary-button-background: #DAD8CC;
+    --color-primary-button-border: #1C1F19;
+    --color-primary-button-hover-text: #1C1F19;
+    --color-primary-button-hover-background: #DAD8CC;
+  }
+
+
+
+  a:hover {
+    cursor: pointer;
+    color: var(--color-secondary-text);
+  }

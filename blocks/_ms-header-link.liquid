@@ -1,8 +1,23 @@
-<li>
-    <a href="{{ block.settings.link_url}}" class="menu-list__link button-unstyled">
-        {{ block.settings.title}}
+<style>
+    a.link-style {
+        color: var(--color-foreground);
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    a.link-style:hover {
+        color: var(--color-secondary-text);
+
+    }
+</style>
+
+
+    <a href="{{ block.settings.link_url}}" class="link-style">
+        <li>
+            {{ block.settings.title}}
+        </li>
     </a>
-</li>
+
 
 {%  schema  %} 
     {

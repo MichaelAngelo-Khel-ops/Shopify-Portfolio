@@ -1,11 +1,15 @@
 <style>
-    #shopify-block-{{ block.id}} .menu-drawer__menu{
+    #shopify-block-{{ block.id}} .menu-drawer__menu {
         display: flex;
         flex-direction: {{block.settings.layout}};
         gap: 20px;
         justify-content: center;
         align-items: center;
         margin: 0;
+        font-weight: 500;
+    }
+    #shopify-block-{{ block.id}} .menu-drawer__menu li {
+        width: 100%;
     }
 </style>
 

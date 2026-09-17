@@ -1,3 +1,14 @@
+<style>
+    #shopify-block-{{ block.id}} .menu-drawer__menu{
+        display: flex;
+        flex-direction: {{block.settings.layout}};
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+</style>
+
 <ul class="menu-drawer__menu menu-drawer__menu--grandchildlist">
     {% content_for 'blocks' %}
 </ul>
@@ -6,6 +17,24 @@
 {%  schema  %} 
     {
         "name": "MS menu container",
+        "settings": [
+            {
+                "type": "select",
+                "id": "layout",
+                "label": "layout",
+                "default": "row",
+                "options": [
+                    {
+                        "value": "row",
+                        "label": "row"
+                    },
+                    {
+                        "value": "column",
+                        "label": "column"
+                    }
+                ]
+            }
+        ],
         "blocks": [
             {
                 "type": "@theme"

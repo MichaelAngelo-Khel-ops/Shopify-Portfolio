@@ -9,6 +9,147 @@
  */
 {
   "sections": {
+    "ms_header_iL4cfX": {
+      "type": "ms-header",
+      "blocks": {
+        "ms_menu_container_MAYxYF": {
+          "type": "_ms-menu-container",
+          "name": "MS-header-container",
+          "settings": {},
+          "blocks": {
+            "ms_header_link_JnqUkB": {
+              "type": "_ms-header-link",
+              "name": "ms-menu-link",
+              "settings": {
+                "title": "<p>Home</p>",
+                "link_url": ""
+              },
+              "blocks": {}
+            },
+            "ms_header_link_khNPgd": {
+              "type": "_ms-header-link",
+              "name": "ms-menu-link",
+              "settings": {
+                "title": "<p>About</p>",
+                "link_url": ""
+              },
+              "blocks": {}
+            },
+            "ms_header_link_pf66eV": {
+              "type": "_ms-header-link",
+              "name": "ms-menu-link",
+              "settings": {
+                "title": "<p>Tools</p>",
+                "link_url": ""
+              },
+              "blocks": {}
+            },
+            "ms_header_link_9qaEVH": {
+              "type": "_ms-header-link",
+              "name": "ms-menu-link",
+              "settings": {
+                "title": "<p>Projects</p>",
+                "link_url": ""
+              },
+              "blocks": {}
+            },
+            "ms_header_link_DraAFL": {
+              "type": "_ms-header-link",
+              "name": "ms-menu-link",
+              "settings": {
+                "title": "<p>Experience</p>",
+                "link_url": ""
+              },
+              "blocks": {}
+            },
+            "ms_header_link_T9z9nK": {
+              "type": "_ms-header-link",
+              "name": "ms-menu-link",
+              "settings": {
+                "title": "<p>Contact</p>",
+                "link_url": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "ms_header_link_JnqUkB",
+            "ms_header_link_khNPgd",
+            "ms_header_link_pf66eV",
+            "ms_header_link_9qaEVH",
+            "ms_header_link_DraAFL",
+            "ms_header_link_T9z9nK"
+          ]
+        },
+        "logo": {
+          "type": "logo",
+          "static": true,
+          "settings": {
+            "inverse": false,
+            "font": "heading",
+            "text_color": "",
+            "unit": "percent",
+            "percent_width": 100,
+            "pixel_height": 48,
+            "custom_mobile_size": false,
+            "unit_mobile": "percent",
+            "percent_width_mobile": 100,
+            "pixel_height_mobile": 120,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text": {
+          "type": "text",
+          "static": true,
+          "settings": {
+            "text": "<h1>MS</h1>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "toggle-icon": {
+          "type": "icon",
+          "static": true,
+          "settings": {
+            "icon": "apple",
+            "image_upload": "shopify://shop_images/dark-mode-svgrepo-com.svg",
+            "width": 24,
+            "link": "",
+            "open_in_new_tab": false,
+            "icon_color": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ms_menu_container_MAYxYF"
+      ],
+      "name": "MS header",
+      "settings": {
+        "logo_Text": "text"
+      }
+    },
     "section_M3nMFV": {
       "type": "section",
       "blocks": {
@@ -94,6 +235,7 @@
     }
   },
   "order": [
+    "ms_header_iL4cfX",
     "section_M3nMFV"
   ]
 }

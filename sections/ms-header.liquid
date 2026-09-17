@@ -1,0 +1,63 @@
+
+
+
+<div class="ms-header-wrapper">
+    <div class="ms-header__logo ms-header__text">
+        {% if section.settings.logo_Text ==  "logo"%}
+            {% content_for 'block', type: 'logo', id: 'logo' %}
+        {% else %}
+            {% content_for 'block', type: 'text', id: 'text' %}
+        {% endif %}
+    </div>
+    <div class="ms-header__nav">
+        <div class="ms-header__menu">
+            {% content_for 'blocks' %}
+        </div>
+        <div class="ms-header__toggle">
+            <button class="light-toggler">
+                {% content_for 'block', type: 'icon', id: 'toggle-icon' %}
+            </button>
+        </div>
+    </div>
+
+</div>
+
+{%  schema  %} 
+    {
+        "name": "ms header",
+        "settings": [
+            {
+                "type": "select",
+                "id": "logo_Text",
+                "label": "logo or text",
+                "options": [
+                    {
+                        "value": "logo",
+                        "label": "logo"
+                    },
+                    {
+                        "value": "text",
+                        "label": "text"
+                    }
+                ],
+                "default": "logo"
+            }
+
+        ],
+        "blocks": [
+            {
+                "type": "@theme"
+            },
+            {
+                "type": "_ms-menu-container"
+            }
+        ],
+        
+        "presets": [
+            {
+                "name": "MS header"
+            }
+        ]
+    }
+
+{% endschema %}

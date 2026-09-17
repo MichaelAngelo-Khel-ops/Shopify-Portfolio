@@ -1,0 +1,26 @@
+<ul class="menu-drawer__menu menu-drawer__menu--grandchildlist">
+    {% content_for 'blocks' %}
+</ul>
+
+
+{%  schema  %} 
+    {
+        "name": "MS menu container",
+        "blocks": [
+            {
+                "type": "@theme"
+            },
+            {
+                "type": "_ms-header-link"
+            }
+        ],
+
+        "presets": [
+            {
+                "name": "MS-header-container"
+            }
+        ]
+
+
+    }
+{% endschema %}

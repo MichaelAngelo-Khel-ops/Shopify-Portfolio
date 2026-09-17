@@ -1,0 +1,29 @@
+<li>
+    <a href="{{ block.settings.link_url}}" class="menu-list__link button-unstyled">
+        <div class="menu-list__link-title">{{ block.settings.title}}</div>
+    </a>
+</li>
+
+{%  schema  %} 
+    {
+        "name": "_ms header link",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "title",
+                "label": "Title",
+                "default": "<p>Link Name<p>"
+            },
+            {
+                "type": "url",
+                "id": "link_url",
+                "label": "URL",
+            }
+        ],
+        "presets": [
+            {
+                "name": "ms-menu-link"
+            }
+        ]
+    }
+{% endschema %}

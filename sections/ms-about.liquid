@@ -1,0 +1,118 @@
+
+<style>
+    #shopify-section-{{ section.id }} {
+    }
+    #shopify-section-{{ section.id }} .margin-top {
+        margin-top: {{ section.settings.margin_top }}px;
+    }
+    #shopify-section-{{ section.id }} .margin-bottom {
+        margin-bottom: {{ section.settings.margin_bottom }}px;
+    }
+</style>
+
+
+<div class="ms-about-wrapper section section--page-width margin-top margin-bottom">
+
+    {% if section.settings.background_image %}
+        {{ section.settings.background_image 
+        |  image_url: width: 1920 
+        | image_tag: class: 'ms-about__background-image' }}
+    {% endif %}
+
+    <div class="ms-about__background-overlay">
+
+    </div>
+
+    <div class="ms-about__content">
+        <div class="ms-about__content-title">
+            <h1>{{ section.settings.content_main_title }}</h1>
+        </div>
+
+        <div class="ms-about__content-wrapper">
+            <div class="ms-about__content-image">
+                {% if section.settings.image_content != blank %}
+                     {{ section.settings.image_content |  image_url: width: 1920 | image_tag: class: 'ms-about__content-image' }}
+                {% endif %}
+            </div>
+
+            <div class="ms-about__content-text">
+                <h3>{{ section.settings.content_title }}</h3>
+                <div class="ms-about__content-text">
+                    {{ section.settings.content_text }}
+                </div>
+                <div class="ms-about__content-brief">
+                    {% content_for 'blocks' %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{%  schema  %} 
+    {
+        "name": "about",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "background_image",
+                "label": "Background image"
+            },
+            {
+                "type": "text",
+                "id": "content_main_title",
+                "label": "Content main title"
+            },
+            {
+                "type": "text",
+                "id": "content_title",
+                "label": "Content title"
+            },
+            {
+                "type": "richtext",
+                "id": "content_text",
+                "label": "Content text"
+            },
+            {
+                "type": "image_picker",
+                "id": "image_content",
+                "label": "Image content"
+            },
+            {
+                "type": "header",
+                "content": "page position"
+            },
+            {
+                "type": "range",
+                "id": "margin_top",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "px",
+                "label": "Margin top",
+                "default": 0
+            },
+            {
+                "type": "range",
+                "id": "margin_bottom",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "px",
+                "label": "Margin bottom",
+                "default": 0
+            }
+        ],
+        "blocks": [
+            {
+                "type": "@theme"
+            }
+        ],
+        "presets": [
+            {
+                "name": "ms-about-about"
+            }
+        ]
+    }
+
+{% endschema %}

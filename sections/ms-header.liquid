@@ -5,8 +5,16 @@
     #shopify-section-{{ section.id }} .ms-header-wrapper {
         display: flex;
         padding: 20px 30px;
-        max-width: 1440px;
         margin: auto;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgb(var(--color-background-rgb) / 0.6);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgb(var(--color-border-rgb, 230 230 230) / 0.3);
     }
     .ms-header__nav {
         display: flex;
@@ -55,7 +63,7 @@
     }
     .light-mode #moon-icon { 
         display: block; 
-    } */
+    }
 
     #sun-icon { display: block; }
     #moon-icon { display: none; }

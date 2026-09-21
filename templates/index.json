@@ -15,7 +15,9 @@
         "ms_menu_container_MAYxYF": {
           "type": "_ms-menu-container",
           "name": "MS-header-container",
-          "settings": {},
+          "settings": {
+            "layout": "row"
+          },
           "blocks": {
             "ms_header_link_JnqUkB": {
               "type": "_ms-header-link",
@@ -127,19 +129,6 @@
             "padding-inline-end": 0
           },
           "blocks": {}
-        },
-        "toggle-icon": {
-          "type": "icon",
-          "static": true,
-          "settings": {
-            "icon": "apple",
-            "image_upload": "shopify://shop_images/dark-mode-svgrepo-com.svg",
-            "width": 24,
-            "link": "",
-            "open_in_new_tab": false,
-            "icon_color": ""
-          },
-          "blocks": {}
         }
       },
       "block_order": [
@@ -150,92 +139,39 @@
         "logo_Text": "text"
       }
     },
-    "section_M3nMFV": {
-      "type": "section",
-      "blocks": {
-        "text_TTtJYe": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Made with care and unconditionally loved by our customers, this signature bestseller exceeds all expectations.</p>",
-            "width": "fit-content",
-            "max_width": "narrow",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "logo_VmUfWy": {
-          "type": "logo",
-          "settings": {
-            "inverse": false,
-            "font": "heading",
-            "text_color": "",
-            "unit": "percent",
-            "percent_width": 100,
-            "pixel_height": 48,
-            "custom_mobile_size": false,
-            "unit_mobile": "percent",
-            "percent_width_mobile": 100,
-            "pixel_height_mobile": 120,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_TTtJYe",
-        "logo_VmUfWy"
-      ],
-      "name": "t:names.large_logo",
+    "ms_main_banner_HgPXpV": {
+      "type": "ms-main-banner",
+      "name": "ms-main-banner",
       "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "space-between",
-        "gap": 16,
-        "section_width": "page-width",
-        "section_height": "medium",
-        "section_height_custom": 50,
-        "background_media": "none",
-        "background_color": "",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_color": "",
-        "border_radius": 0,
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "content_position": "center",
+        "title": "<p>Built slow,<br/>shipped <em>green</em>.</p>",
+        "subtitle": "<p>A dark, botanical interface language for products that want<br/>to feel considered rather than loud — moss and sage in place<br/>of neon, with room for the work to breathe.</p>",
+        "button1_text": "View components",
+        "button1_link": "#",
+        "button1_style": "primary",
+        "button2_text": "See tokens",
+        "button2_link": "#",
+        "button2_style": "secondary",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "ms_about_Mf6cqe": {
+      "type": "ms-about",
+      "name": "ms-about-about",
+      "settings": {
+        "background_image": "shopify://shop_images/DEVELOPER_S_COPY_-_PARIS_PRETTY_2.png",
+        "content_main_title": "Testing title",
+        "content_title": "title content",
+        "content_text": "<p>A dark, botanical interface language for products that want<br/>to feel considered rather than loud — moss and sage in place<br/>of neon, with room for the work to breathe.</p>",
+        "margin_top": 0,
+        "margin_bottom": 0
       }
     }
   },
   "order": [
     "ms_header_iL4cfX",
-    "section_M3nMFV"
+    "ms_main_banner_HgPXpV",
+    "ms_about_Mf6cqe"
   ]
 }

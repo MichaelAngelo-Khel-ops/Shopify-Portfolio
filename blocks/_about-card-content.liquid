@@ -1,0 +1,67 @@
+<style>
+    #shopify-block-{{ block.id }} .about-container {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border: 1px solid var(--color-border);
+        border-radius: 2px;
+        padding: 15px;
+
+    }
+    
+    .about-container__text-content {
+        display: flex;
+        gap: 5px;
+    }
+
+    #shopify-block-{{ block.id }} .about-container__text-description {
+        color: var(--color-secondary-text);
+        font-family: var(--font-subheading--family);
+    }
+
+</style>
+
+<div class="about-container">
+    {% content_for 'block', type: 'icon', id: 'icon-nickname' %}
+    
+    <div class="about-container__text-content">
+        <p class="about-container__text-title">
+            {{ block.settings.text-title }}
+        </p>
+        <p class="about-container__text-description">
+            {{ block.settings.text-description }}
+        </p>
+    </div>
+</div>
+
+{%  schema  %} 
+    {
+        "name": "about card content",
+        "settings": [
+            {
+                "type": "header",
+                "content": "about card settings"
+            },
+            {
+                "type": "text",
+                "id": "text-title",
+                "label": "text title"
+            },
+            {
+                "type": "text",
+                "id": "text-description",
+                "label": "text description"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "icon",
+            }   
+        ],
+        "presets": [
+            {
+                "name": "about-container"
+            }
+        ]
+    } 
+{% endschema %}

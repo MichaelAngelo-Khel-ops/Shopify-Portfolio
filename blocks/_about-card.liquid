@@ -1,0 +1,28 @@
+<style>
+    #shopify-block-{{ block.id }} {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+</style>
+
+
+{% content_for 'blocks' %}
+
+{%  schema  %}
+    {
+        "name": "about card",
+        "blocks": [
+            {
+                "type": "_about-card-content"
+            }
+        ],
+        "presets": [
+            {
+                "name": "MS About Card"
+            }
+        ]
+
+    }
+
+{% endschema %}

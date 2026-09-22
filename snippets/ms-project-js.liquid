@@ -1,0 +1,43 @@
+<script defer>
+    document.addEventListener('click', (e) => {
+    const trigger = e.target.closest('[data-accordion-trigger]');
+    if (!trigger) return;
+
+    const item = trigger.closest('.ms-project-item');
+    const panel = item.querySelector('[data-accordion-panel]');
+    const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+
+    // Close all other open panels (accordion behavior — only one open at a time)
+    document.querySelectorAll('[data-accordion-trigger][aria-expanded="true"]').forEach((openTrigger) => {
+        if (openTrigger !== trigger) {
+            openTrigger.setAttribute('aria-expanded', 'false');
+            const openPanel = openTrigger.closest('.ms-project-item').querySelector('[data-accordion-panel]');
+            openPanel.style.maxHeight = null;
+        }
+    });
+
+    // Toggle this one
+    trigger.setAttribute('aria-expanded', !isOpen);
+    panel.style.maxHeight = isOpen ? null : panel.scrollHeight + 'px';
+    });
+
+    document.addEventListener('click', (e) => {
+        const lightboxTrigger = e.target.closest('[data-lightbox-trigger]');
+        if (lightboxTrigger) {
+            const lightbox = document.getElementById(lightboxTrigger.dataset.lightboxTrigger);
+            if (lightbox) lightbox.showModal();
+        }
+
+        const lightboxClose = e.target.closest('[data-lightbox-close]');
+        if (lightboxClose) {
+            lightboxClose.closest('dialog').close();
+        }
+
+        // Click outside image (on the backdrop) also closes it
+        if (e.target.tagName === 'DIALOG' && e.target.classList.contains('ms-lightbox')) {
+            e.target.close();
+        }
+    });
+
+</script>
+

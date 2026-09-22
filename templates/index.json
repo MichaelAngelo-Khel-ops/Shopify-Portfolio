@@ -144,12 +144,12 @@
       "name": "ms-main-banner",
       "settings": {
         "content_position": "center",
-        "title": "<p>Built slow,<br/>shipped <em>green</em>.</p>",
+        "title": "<p>Michael Angelo<br/><em>Salonga</em></p>",
         "subtitle": "<p>A dark, botanical interface language for products that want<br/>to feel considered rather than loud — moss and sage in place<br/>of neon, with room for the work to breathe.</p>",
-        "button1_text": "View components",
+        "button1_text": "VIEW PORTFOLIO",
         "button1_link": "#",
         "button1_style": "primary",
-        "button2_text": "See tokens",
+        "button2_text": "GET IN TOUCH",
         "button2_link": "#",
         "button2_style": "secondary",
         "margin_top": 0,
@@ -158,20 +158,558 @@
     },
     "ms_about_Mf6cqe": {
       "type": "ms-about",
+      "blocks": {
+        "about_card_WkjDdw": {
+          "type": "_about-card",
+          "name": "MS About Card",
+          "settings": {},
+          "blocks": {
+            "about_card_content_dHxikA": {
+              "type": "_about-card-content",
+              "name": "about-container",
+              "settings": {
+                "text-title": "Analysis →",
+                "text-description": "Debugging"
+              },
+              "blocks": {
+                "icon-nickname": {
+                  "type": "icon",
+                  "static": true,
+                  "settings": {
+                    "icon": "clipboard",
+                    "width": 24,
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "icon_color": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            },
+            "about_card_content_FAQfHz": {
+              "type": "_about-card-content",
+              "name": "about-container",
+              "settings": {
+                "text-title": "Customer Service →",
+                "text-description": "User Experience"
+              },
+              "blocks": {
+                "icon-nickname": {
+                  "type": "icon",
+                  "static": true,
+                  "settings": {
+                    "icon": "apple",
+                    "width": 24,
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "icon_color": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            },
+            "about_card_content_8Jfmzd": {
+              "type": "_about-card-content",
+              "name": "about-container",
+              "settings": {
+                "text-title": "Attention to details →",
+                "text-description": "Code Quality"
+              },
+              "blocks": {
+                "icon-nickname": {
+                  "type": "icon",
+                  "static": true,
+                  "settings": {
+                    "icon": "apple",
+                    "width": 24,
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "icon_color": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            },
+            "about_card_content_FD6UFq": {
+              "type": "_about-card-content",
+              "name": "about-container",
+              "settings": {
+                "text-title": "Output →",
+                "text-description": "Optimization"
+              },
+              "blocks": {
+                "icon-nickname": {
+                  "type": "icon",
+                  "static": true,
+                  "settings": {
+                    "icon": "apple",
+                    "width": 24,
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "icon_color": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            }
+          },
+          "block_order": [
+            "about_card_content_dHxikA",
+            "about_card_content_FAQfHz",
+            "about_card_content_8Jfmzd",
+            "about_card_content_FD6UFq"
+          ]
+        }
+      },
+      "block_order": [
+        "about_card_WkjDdw"
+      ],
       "name": "ms-about-about",
       "settings": {
-        "background_image": "shopify://shop_images/DEVELOPER_S_COPY_-_PARIS_PRETTY_2.png",
-        "content_main_title": "Testing title",
-        "content_title": "title content",
-        "content_text": "<p>A dark, botanical interface language for products that want<br/>to feel considered rather than loud — moss and sage in place<br/>of neon, with room for the work to breathe.</p>",
-        "margin_top": 0,
-        "margin_bottom": 0
+        "background_color": "{{ settings.color_palette.background }}",
+        "content_main_title": "Background and Development",
+        "content_title": "From Account Manger to Developer",
+        "content_text": "<p>After 6 years in sales, marketing, and account management, I discovered that the problem-solving, attention to detail, and client-focused mindset that shaped my career in the BPO industry translate naturally into front-end and Shopify development.</p><p>Today, I bring that same approach to building and customizing Shopify stores—combining technical skills with a strong understanding of client needs, business goals, and user experience.</p><p>I believe great websites are more than just good-looking designs. They should be reliable, purposeful, easy to use, and built to help a business grow. My goal is to turn your ideas into a Shopify experience you can confidently share with your customers.</p>",
+        "image_content": "shopify://shop_images/my_profile.jpg",
+        "margin_top": 80,
+        "margin_bottom": 80
+      }
+    },
+    "ms_tools_tDaJLf": {
+      "type": "ms-tools",
+      "blocks": {
+        "ms_tools_item_fJPtYd": {
+          "type": "_ms-tools-item",
+          "name": "tools icon",
+          "settings": {
+            "card_title": "Library",
+            "card_description": "Front End"
+          },
+          "blocks": {
+            "ms_tools_list_pbQ4mw": {
+              "type": "_ms-tools-list",
+              "name": "ms tools list",
+              "settings": {
+                "tools_title": "Shopify"
+              },
+              "blocks": {}
+            },
+            "ms_tools_list_izmdnL": {
+              "type": "_ms-tools-list",
+              "name": "ms tools list",
+              "settings": {
+                "tools_title": "React"
+              },
+              "blocks": {}
+            },
+            "ms_tools_list_LYeBkE": {
+              "type": "_ms-tools-list",
+              "name": "ms tools list",
+              "settings": {
+                "tools_title": "Java Script"
+              },
+              "blocks": {}
+            },
+            "ms_tools_list_Q8VWWw": {
+              "type": "_ms-tools-list",
+              "name": "ms tools list",
+              "settings": {
+                "tools_title": "HTML5/CSS"
+              },
+              "blocks": {}
+            },
+            "icon": {
+              "type": "icon",
+              "static": true,
+              "settings": {
+                "icon": "box",
+                "width": 24,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "ms_tools_list_pbQ4mw",
+            "ms_tools_list_izmdnL",
+            "ms_tools_list_LYeBkE",
+            "ms_tools_list_Q8VWWw"
+          ]
+        },
+        "ms_tools_item_3dbTnx": {
+          "type": "_ms-tools-item",
+          "name": "tools icon",
+          "settings": {
+            "card_title": "Plugins",
+            "card_description": "Back End / Logic"
+          },
+          "blocks": {
+            "ms_tools_list_RaMXGQ": {
+              "type": "_ms-tools-list",
+              "name": "ms tools list",
+              "settings": {
+                "tools_title": "Liquid"
+              },
+              "blocks": {}
+            },
+            "ms_tools_list_hxLtVM": {
+              "type": "_ms-tools-list",
+              "name": "ms tools list",
+              "settings": {
+                "tools_title": "Rest APIs"
+              },
+              "blocks": {}
+            },
+            "ms_tools_list_rFjCey": {
+              "type": "_ms-tools-list",
+              "name": "ms tools list",
+              "settings": {
+                "tools_title": "Node"
+              },
+              "blocks": {}
+            },
+            "ms_tools_list_ARhm7d": {
+              "type": "_ms-tools-list",
+              "name": "ms tools list",
+              "settings": {
+                "tools_title": "Java Script"
+              },
+              "blocks": {}
+            },
+            "ms_tools_list_R3m4Qk": {
+              "type": "_ms-tools-list",
+              "name": "ms tools list",
+              "settings": {
+                "tools_title": "GraphQL"
+              },
+              "blocks": {}
+            },
+            "icon": {
+              "type": "icon",
+              "static": true,
+              "settings": {
+                "icon": "apple",
+                "width": 24,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "ms_tools_list_RaMXGQ",
+            "ms_tools_list_hxLtVM",
+            "ms_tools_list_rFjCey",
+            "ms_tools_list_ARhm7d",
+            "ms_tools_list_R3m4Qk"
+          ]
+        },
+        "ms_tools_item_6PiFkH": {
+          "type": "_ms-tools-item",
+          "name": "tools icon",
+          "settings": {
+            "card_title": "Canvas",
+            "card_description": "Styling & Animation"
+          },
+          "blocks": {
+            "ms_tools_list_CyfJxB": {
+              "type": "_ms-tools-list",
+              "name": "ms tools list",
+              "settings": {
+                "tools_title": "GSAP"
+              },
+              "blocks": {}
+            },
+            "ms_tools_list_G47zz9": {
+              "type": "_ms-tools-list",
+              "name": "ms tools list",
+              "settings": {
+                "tools_title": "Responsive Design"
+              },
+              "blocks": {}
+            },
+            "ms_tools_list_QmULV9": {
+              "type": "_ms-tools-list",
+              "name": "ms tools list",
+              "settings": {
+                "tools_title": "Bootstrap"
+              },
+              "blocks": {}
+            },
+            "ms_tools_list_qVHa6z": {
+              "type": "_ms-tools-list",
+              "name": "ms tools list",
+              "settings": {
+                "tools_title": "TailwindCSS"
+              },
+              "blocks": {}
+            },
+            "icon": {
+              "type": "icon",
+              "static": true,
+              "settings": {
+                "icon": "apple",
+                "width": 24,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "ms_tools_list_CyfJxB",
+            "ms_tools_list_G47zz9",
+            "ms_tools_list_QmULV9",
+            "ms_tools_list_qVHa6z"
+          ]
+        },
+        "ms_tools_item_UtY93Y": {
+          "type": "_ms-tools-item",
+          "name": "tools icon",
+          "settings": {
+            "card_title": "Accessories",
+            "card_description": "Tools"
+          },
+          "blocks": {
+            "ms_tools_list_LtnT8R": {
+              "type": "_ms-tools-list",
+              "name": "ms tools list",
+              "settings": {
+                "tools_title": "Git/GitHub"
+              },
+              "blocks": {}
+            },
+            "ms_tools_list_NU4fhW": {
+              "type": "_ms-tools-list",
+              "name": "ms tools list",
+              "settings": {
+                "tools_title": "Figma"
+              },
+              "blocks": {}
+            },
+            "ms_tools_list_QwEWfx": {
+              "type": "_ms-tools-list",
+              "name": "ms tools list",
+              "settings": {
+                "tools_title": "Canva"
+              },
+              "blocks": {}
+            },
+            "ms_tools_list_3niDqe": {
+              "type": "_ms-tools-list",
+              "name": "ms tools list",
+              "settings": {
+                "tools_title": "VS Code"
+              },
+              "blocks": {}
+            },
+            "ms_tools_list_awpwaV": {
+              "type": "_ms-tools-list",
+              "name": "ms tools list",
+              "settings": {
+                "tools_title": "Vercel"
+              },
+              "blocks": {}
+            },
+            "icon": {
+              "type": "icon",
+              "static": true,
+              "settings": {
+                "icon": "apple",
+                "width": 24,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "ms_tools_list_LtnT8R",
+            "ms_tools_list_NU4fhW",
+            "ms_tools_list_QwEWfx",
+            "ms_tools_list_3niDqe",
+            "ms_tools_list_awpwaV"
+          ]
+        },
+        "tools-icons": {
+          "type": "_ms-icon-slider",
+          "static": true,
+          "settings": {},
+          "blocks": {
+            "icon_EjEJya": {
+              "type": "icon",
+              "name": "t:names.icon",
+              "settings": {
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/shopify-icon.png",
+                "width": 100,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": ""
+              },
+              "blocks": {}
+            },
+            "icon_HHWnzA": {
+              "type": "icon",
+              "name": "t:names.icon",
+              "settings": {
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/react-js-icon.webp",
+                "width": 100,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": ""
+              },
+              "blocks": {}
+            },
+            "icon_VGWTUK": {
+              "type": "icon",
+              "name": "t:names.icon",
+              "settings": {
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/javascrip-icon.webp",
+                "width": 100,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": ""
+              },
+              "blocks": {}
+            },
+            "icon_RLRtw7": {
+              "type": "icon",
+              "name": "t:names.icon",
+              "settings": {
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/html5-icon.png",
+                "width": 100,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": ""
+              },
+              "blocks": {}
+            },
+            "icon_dHDA3d": {
+              "type": "icon",
+              "name": "t:names.icon",
+              "settings": {
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/liquid-icon.png",
+                "width": 100,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": ""
+              },
+              "blocks": {}
+            },
+            "icon_pLnKj8": {
+              "type": "icon",
+              "name": "t:names.icon",
+              "settings": {
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/bootstrap-icon.png",
+                "width": 100,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": ""
+              },
+              "blocks": {}
+            },
+            "icon_Y7WrAJ": {
+              "type": "icon",
+              "name": "t:names.icon",
+              "settings": {
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/css-icon.png",
+                "width": 100,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": ""
+              },
+              "blocks": {}
+            },
+            "icon_a3GRHK": {
+              "type": "icon",
+              "name": "t:names.icon",
+              "settings": {
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/git-icon.png",
+                "width": 100,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": ""
+              },
+              "blocks": {}
+            },
+            "icon_p7YBgR": {
+              "type": "icon",
+              "name": "t:names.icon",
+              "settings": {
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/github-icon.png",
+                "width": 100,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": ""
+              },
+              "blocks": {}
+            },
+            "icon_gkKViz": {
+              "type": "icon",
+              "name": "t:names.icon",
+              "settings": {
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/vs-code-icon.webp",
+                "width": 100,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "icon_EjEJya",
+            "icon_HHWnzA",
+            "icon_VGWTUK",
+            "icon_RLRtw7",
+            "icon_dHDA3d",
+            "icon_pLnKj8",
+            "icon_Y7WrAJ",
+            "icon_a3GRHK",
+            "icon_p7YBgR",
+            "icon_gkKViz"
+          ]
+        }
+      },
+      "block_order": [
+        "ms_tools_item_fJPtYd",
+        "ms_tools_item_3dbTnx",
+        "ms_tools_item_6PiFkH",
+        "ms_tools_item_UtY93Y"
+      ],
+      "name": "ms tools",
+      "settings": {
+        "tools_title": "My Inventory",
+        "text_tools_title": "TECHNICAL EXPERTISE",
+        "text_tools_description": "<p>My toolkit includes <strong>React, TypeScript, and Next.js</strong> for building scalable applications, along with <strong>Tailwind CSS</strong> for pixel-perfect designs. I'm passionate about web performance, accessibility, and creating intuitive user experiences that work flawlessly across all devices.</p><p>In my transition to development, I've built and deployed multiple production applications, and completed <strong>Meta's Frontend Developer Certification</strong>—proving that career pivots at any stage can lead to expertise.</p><p>My mechanical background taught me that documentation prevents disasters—a practice that now results in <strong>clean, maintainable, and reusable code</strong> with comprehensive comments and clear commit messages that other developers love working with.</p>",
+        "margin_top": 80,
+        "margin_bottom": 80
       }
     }
   },
   "order": [
     "ms_header_iL4cfX",
     "ms_main_banner_HgPXpV",
-    "ms_about_Mf6cqe"
+    "ms_about_Mf6cqe",
+    "ms_tools_tDaJLf"
   ]
 }

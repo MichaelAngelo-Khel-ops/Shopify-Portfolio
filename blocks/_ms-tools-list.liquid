@@ -1,0 +1,30 @@
+
+<style>
+    #shopify-block-{{block.id}} li::marker{
+        color: var(--color-acent)
+    }
+</style>
+
+    <li>{{ block.settings.tools_title }}</li>
+
+{%  schema  %} 
+    {
+        "name": "ms tools list",
+        "settings": [
+            {
+                "type": "header",
+                "content": "tools"
+            },
+            {
+                "type": "text",
+                "id": "tools_title",
+                "label": "Tools title"
+            }
+        ],
+        "presets": [
+            {
+                "name": "ms tools list"
+            }
+        ]
+    }
+{% endschema %}

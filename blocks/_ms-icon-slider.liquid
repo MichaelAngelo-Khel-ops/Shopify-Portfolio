@@ -1,0 +1,40 @@
+<style>
+    #shopify-block-{{block.id}} {
+        display: flex;
+        gap: 50px;
+        padding-right: 50px;
+    }
+    #shopify-block-{{block.id}} > div {
+        /* background: rgb(var(--color-secondary-background-rgb) / 0.6);
+        border-radius: 50%;
+        padding: 20px;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgb(var(--color-border-rgb, 230 230 230) / 0.3);
+        border-top: .5px solid rgb(var(--color-border-rgb, 230 230 230) / 0.3); */
+    }
+
+    #shopify-block-{{block.id}} > div:hover {
+        transform: translateY(-5px) scale(1.1);
+        
+    }
+</style>
+
+{% content_for 'blocks' %}
+
+{%  schema  %}  
+    {
+        "name": "ms icon slider",
+        "blocks": [
+            {
+                "type": "icon"
+            }
+        ],
+        "presets": [
+            {
+                "name": "ms icon slider"
+            }
+        ]
+
+    }
+{% endschema %}

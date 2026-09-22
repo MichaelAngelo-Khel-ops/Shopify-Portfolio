@@ -1,0 +1,68 @@
+    
+<style>
+    #shopify-block-{{block.id}} {
+        padding: 30px 20px;
+        border: 1px solid var(--color-input-border);
+        background-color: #161A14;
+        height: 100%;
+    }
+
+    #shopify-block-{{block.id}} .ms-tools__card-list {
+        list-style: square;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #shopify-block-{{block.id}} .ms-tools__card {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+</style>
+
+<div class="ms-tools__card">
+
+    {% content_for 'block', type: 'icon', id: 'icon' %}
+    <h3>{{ block.settings.card_title }}</h3>
+    <div>{{ block.settings.card_description }}</div>
+
+    <ul class="ms-tools__card-list">
+        {% content_for 'blocks' %}
+    </ul>
+
+</div>
+    
+
+
+{%  schema  %} 
+    {
+        "name": "tools card",
+        "settings": [
+            {
+                "type": "text",
+                "id": "card_title",
+                "label": "card title"
+            },
+            {
+                "type": "text",
+                "id": "card_description",
+                "label": "card description"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "_ms-tools-list"
+            },
+            {
+                "type": "icon"
+            }
+        ],
+        "presets": [
+            {
+                "name": "tools icon"
+            }
+        ]
+    }
+{% endschema %}

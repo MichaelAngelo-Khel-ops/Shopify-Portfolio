@@ -1,0 +1,19 @@
+<div class="ms-social-icons">
+    {% content_for 'block', type: '_ms-social-icons-list', id: 'ms-social-icons' %}
+</div>
+
+{%  schema  %}  
+    {
+        "name": "MS social icon",
+        "blocks": [
+            {
+                "type": "_ms-social-icons-list"
+            }
+        ],
+        "presets": [
+            {
+                "name": "MS icon list"
+            }
+        ]
+    }
+{% endschema %}

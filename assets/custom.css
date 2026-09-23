@@ -84,7 +84,7 @@ button:-moz-focusring,
 
 :root {
   --color-primary-text: #92998C;
-  --color-secondary-text: #A9C97E;
+  --color-secondary-text: #A9C97E;  
   --color-background: #1C1F19;
   --color-background-rgb: rgb(28 31 25);
   --color-secondary-background-rgb: rgb(22 26 20);

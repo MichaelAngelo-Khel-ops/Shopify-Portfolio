@@ -1,0 +1,301 @@
+<style>
+
+    #shopify-section-{{ section.id }}{
+        background-color: var(--color-background);
+        --color-icon: var(--color-secondary-text);
+    }
+
+    #shopify-section-{{ section.id }} .ms-contact__title{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    #shopify-section-{{ section.id }} .margin-top {
+        margin-top: {{ section.settings.margin_top }}px;
+    }
+
+    #shopify-section-{{ section.id }} .margin-bottom {
+        margin-bottom: {{ section.settings.margin_bottom }}px;
+    }
+
+    #shopify-section-{{ section.id }} .ms-mail-icon{
+        color: var(--color-icon);
+        fill: var(--color-icon);
+        width: 100px;
+        height: 100px;
+    }
+
+    .ms-contact__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .ms-contact__content-left {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+    .ms-contact__content-left, .ms-contact__content-right {
+        padding: 40px 60px;
+        border: 1px solid var(--color-input-border);
+        background-color: #161A14;
+    }
+
+
+    .ms-contact__button {
+        display: flex;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 5px;
+    }
+
+    .ms-button-icon, .ms-location-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .ms-location-icon {
+        fill: var(--color-icon);
+    }
+
+    .ms-contact__link {
+        color: var(--color-secondary-text);
+        font-family: var(--font-subheading--family);
+        letter-spacing: .5px;
+    }
+
+    .ms-contact__location {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ms-contact__right-title {
+        margin-bottom: 16px;
+    }
+
+    .ms-contact__right-description {
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ms-contact__right-description strong {
+        color: var(--color-secondary-text);
+    }
+
+    .ms-contact__socials-title {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .ms-contact__socials-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .social-icon {
+        width: 24px;
+        height: 24px;
+        fill: var(--color-icon);
+
+    }
+
+    .ms-contact__socials-icons a {
+        padding: 16px;
+        border: 1px solid var(--color-primary-text);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+
+</style>
+
+<div class="ms-contact-wrapper section section--page-width margin-top margin-bottom">
+        <div class="ms-contact__title">
+            <h1>{{ section.settings.contact_title }}</h1>
+            <span class="ms-contact__subtitle">
+                {% if section.settings.contact_sub_title %}
+                    {{ section.settings.contact_sub_title }}
+                {% endif %}
+            </span>
+        </div>
+
+        <div class="ms-contact__content">
+            <div class="ms-contact__content-left">
+                {% render 'ms-mail-icon', className: 'ms-mail-icon' %}
+                <h3>{{ section.settings.contact_form_title }}</h3>
+                <span>{{ section.settings.contact_form_sub_title }}</span>  
+                <button class="ms-contact__button button-primary"> {% render 'ms-send-icon', className: 'ms-button-icon' %}<span class="ms-contact_button-text">{{ section.settings.button_label }}</span></button>
+
+                <p class="ms-contact__email_text">{{ section.settings.contact_email_text }}</p>
+                <a href="mailto:{{ section.settings.contact_email }}" class="ms-contact__link">
+                    {{ section.settings.contact_email }}
+                </a>
+                <div class="ms-contact__location">
+                    {%  render 'ms-location-icon', className: 'ms-location-icon' %}
+                    <span class="ms-contact__location-text">{{ section.settings.contact_location }}</span>
+                </div>
+            </div>
+            <div class="ms-contact__content-right">
+                <h3 class="ms-contact__right-title">{{ section.settings.contact_right_title }}</h3>
+                <span class="ms-contact__right-description"> {{ section.settings.contact_right_description }}</span>
+            </div>
+        </div>
+
+        <div class="ms-contact__socials">
+            <h3 class="ms-contact__socials-title">
+                {{ section.settings.contact_social_title }}
+            </h3>
+
+            <div class="ms-contact__socials-icons">
+                <a href="{{ section.settings.github_link}}">{% render 'ms-github-icon', className: 'social-icon' %}</a>
+                <a href=" {{ section.settings.linkedin_link}}">{% render 'ms-linkedin-icon', className: 'social-icon' %}</a>
+                <a href=" {{ section.settings.resume_link}}">{% render 'ms-resume-icon', className: 'social-icon' %}</a>
+            </div>
+        </div>
+
+
+</div>
+
+{%  schema  %}  
+    {
+        "name": "MS Contact",
+        "settings": [
+            {
+                "type": "header",
+                "content": "section settings"
+            },
+            {
+                "type": "text",
+                "id": "contact_title",
+                "label": "contact_title",
+                "default": "Experiences"
+            },
+            {
+                "type": "text",
+                "id": "contact_sub_title",
+                "label": "contact_sub_title",
+            },
+            {
+                "type": "header",
+                "content": "contact settings"
+            },
+            {
+                "type": "text",
+                "id": "contact_form_title",
+                "label": "contact form title",
+            },
+            {
+                "type": "text",
+                "id": "contact_form_sub_title",
+                "label": "contact_form_sub_title",  
+            },
+            {
+                "type": "text",
+                "id": "button_label",
+                "label": "contact button text",  
+            },
+            {
+                "type": "text",
+                "id": "contact_email_text",
+                "label": "contact email text",
+            },
+            {
+                "type": "text",
+                "id": "contact_email",
+                "label": "contact email",
+            },
+            {
+                "type": "text",
+                "id": "contact_location",
+                "label": "contact location",
+            },
+            {
+                "type": "header",
+                "content": "Contact right settings"
+            },
+            {
+                "type": "text",
+                "id": "contact_right_title",
+                "label": "contact right title",
+            },
+            {
+                "type": "richtext",
+                "id": "contact_right_description",
+                "label": "contact right description",
+            },
+            {
+                "type": "header",
+                "content": "Contact social settings"
+            },
+            {
+                "type": "text",
+                "id": "contact_social_title",
+                "label": "Social Title",
+            },
+            {
+                "type": "url",
+                "id": "github_link",
+                "label": "github link",
+            },
+            {
+                "type": "url",
+                "id": "linkedin_link",
+                "label": "linkedin link",
+            },
+            {
+                "type": "url",
+                "id": "resume_link",
+                "label": "resume link",
+            },
+            {
+                "type": "header",
+                "content": "page position"
+            },
+            {
+                "type": "range",
+                "id": "margin_top",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "px",
+                "label": "margin top",
+                "default": 0
+            },
+            {
+                "type": "range",
+                "id": "margin_bottom",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "px",
+                "label": "margin bottom",
+                "default": 0
+            }
+        ], 
+        "blocks": [
+            {
+                "type": "_ms-social-icons"
+            }
+        ],
+        "presets": [
+            {
+                "name": "MS Contact Section"
+            }
+        ]
+    }
+{% endschema %}

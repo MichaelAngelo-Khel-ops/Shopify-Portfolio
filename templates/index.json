@@ -908,7 +908,29 @@
       ],
       "name": "MS Experiences",
       "settings": {
-        "projects_title": "Experience",
+        "experience_title": "Experiences",
+        "margin_top": 80,
+        "margin_bottom": 80
+      }
+    },
+    "ms_contact_janniJ": {
+      "type": "ms-contact",
+      "name": "MS Contact Section",
+      "settings": {
+        "contact_title": "Contact Me",
+        "contact_sub_title": "Ready to bring precision and performance to your team",
+        "contact_form_title": "GET IN TOUCH",
+        "contact_form_sub_title": "Ready to discuss your next project?",
+        "button_label": "Send Email",
+        "contact_email_text": "Contact Email:",
+        "contact_email": "Michael111800Salonga@gmail.com",
+        "contact_location": "Tarlac City, Philippines",
+        "contact_right_title": "BEYOND THE CODE",
+        "contact_right_description": "<p>When I'm not crafting code, you'll still find me in the garage working on <strong>bikes</strong> or making fresh <strong>pasta,</strong> because whether it's bikes, code, or cavatelli, I believe in crafting things from scratch with patience and precision.</p><p>Based in <strong>Boston</strong>, I'm excited to bring my unique perspective to a team that values both innovation and reliability. I'm currently seeking opportunities where I can combine my customer service expertise, mechanical problem-solving skills, and frontend development passion to create exceptional digital experiences.</p><p>Let's build something amazing together.</p><p><strong>STATUS:</strong> Open to opportunities | Full-time Frontend Developer roles | Boston or Remote</p>",
+        "contact_social_title": "",
+        "github_link": "",
+        "linkedin_link": "",
+        "resume_link": "",
         "margin_top": 80,
         "margin_bottom": 80
       }
@@ -920,6 +942,7 @@
     "ms_about_Mf6cqe",
     "ms_tools_tDaJLf",
     "ms_projects_xfn96A",
-    "ms_experiences_GRYNLU"
+    "ms_experiences_GRYNLU",
+    "ms_contact_janniJ"
   ]
 }

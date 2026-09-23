@@ -1,0 +1,101 @@
+
+{% if block.settings.icon != blank %}
+
+    <svg
+    class="social-icon"
+    aria-hidden="true"
+    focusable="false"
+    xmlns="http://www.w3.org/2000/svg"
+    width="{{ block.settings.icon_size }}"
+    height="{{ block.settings.icon_size }}"
+    viewBox="0 0 20 20"
+  >
+    {%- render 'icon', icon: block.settings.icon -%}
+  </svg>
+
+{% endif %}
+
+{%  schema  %}  
+    {
+        "name": "ms svg icon list",
+        "settings": [
+            {
+                "type": "header",
+                "content": "Icon Settings"
+            },
+            {
+                "type": "select",
+                "id": "icon",
+                "label": "icon",
+                "options": [
+                    {
+                    "value": "facebook",
+                    "label": "t:options.social_facebook"
+                    },
+                    {
+                    "value": "instagram",
+                    "label": "t:options.social_instagram"
+                    },
+                    {
+                    "value": "linkedin",
+                    "label": "t:options.social_linkedin"
+                    },
+                    {
+                    "value": "pinterest",
+                    "label": "t:options.social_pinterest"
+                    },
+                    {
+                    "value": "snapchat",
+                    "label": "t:options.social_snapchat"
+                    },
+                    {
+                    "value": "spotify",
+                    "label": "t:options.social_spotify"
+                    },
+                    {
+                    "value": "threads",
+                    "label": "t:options.social_threads"
+                    },
+                    {
+                    "value": "tiktok",
+                    "label": "t:options.social_tiktok"
+                    },
+                    {
+                    "value": "tumblr",
+                    "label": "t:options.social_tumblr"
+                    }
+                ],
+                "default": "facebook"
+            },
+            {
+                "type": "image_picker",
+                "id": "icon_svg",
+                "label": "Upload Icon"
+            },
+            {
+                "type": "range",
+                "id": "icon_size",
+                "label": "icon size",
+                "min": 10,
+                "max": 100,
+                "step": 1,
+                "default": 20
+            },
+            {
+                "type": "text",
+                "id": "icon_url",
+                "label": "icon url",
+            },
+            {
+                "type": "color",
+                "id": "icon_color",
+                "label": "icon color"
+            }
+        ],
+        "presets": [
+            {
+                "name": "_ms social icon"
+            }
+        ]
+    }
+{% endschema %}

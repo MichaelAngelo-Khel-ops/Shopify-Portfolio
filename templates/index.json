@@ -551,7 +551,7 @@
               "settings": {
                 "icon": "price_tag",
                 "image_upload": "shopify://shop_images/shopify-icon.png",
-                "width": 100,
+                "width": 50,
                 "link": "",
                 "open_in_new_tab": false,
                 "icon_color": ""
@@ -564,7 +564,7 @@
               "settings": {
                 "icon": "price_tag",
                 "image_upload": "shopify://shop_images/react-js-icon.webp",
-                "width": 100,
+                "width": 50,
                 "link": "",
                 "open_in_new_tab": false,
                 "icon_color": ""
@@ -577,7 +577,7 @@
               "settings": {
                 "icon": "price_tag",
                 "image_upload": "shopify://shop_images/javascrip-icon.webp",
-                "width": 100,
+                "width": 50,
                 "link": "",
                 "open_in_new_tab": false,
                 "icon_color": ""
@@ -590,7 +590,7 @@
               "settings": {
                 "icon": "price_tag",
                 "image_upload": "shopify://shop_images/html5-icon.png",
-                "width": 100,
+                "width": 50,
                 "link": "",
                 "open_in_new_tab": false,
                 "icon_color": ""
@@ -603,7 +603,7 @@
               "settings": {
                 "icon": "price_tag",
                 "image_upload": "shopify://shop_images/liquid-icon.png",
-                "width": 100,
+                "width": 50,
                 "link": "",
                 "open_in_new_tab": false,
                 "icon_color": ""
@@ -616,7 +616,7 @@
               "settings": {
                 "icon": "price_tag",
                 "image_upload": "shopify://shop_images/bootstrap-icon.png",
-                "width": 100,
+                "width": 50,
                 "link": "",
                 "open_in_new_tab": false,
                 "icon_color": ""
@@ -629,7 +629,7 @@
               "settings": {
                 "icon": "price_tag",
                 "image_upload": "shopify://shop_images/css-icon.png",
-                "width": 100,
+                "width": 50,
                 "link": "",
                 "open_in_new_tab": false,
                 "icon_color": ""
@@ -642,7 +642,7 @@
               "settings": {
                 "icon": "price_tag",
                 "image_upload": "shopify://shop_images/git-icon.png",
-                "width": 100,
+                "width": 50,
                 "link": "",
                 "open_in_new_tab": false,
                 "icon_color": ""
@@ -655,7 +655,7 @@
               "settings": {
                 "icon": "price_tag",
                 "image_upload": "shopify://shop_images/github-icon.png",
-                "width": 100,
+                "width": 50,
                 "link": "",
                 "open_in_new_tab": false,
                 "icon_color": ""
@@ -668,7 +668,46 @@
               "settings": {
                 "icon": "price_tag",
                 "image_upload": "shopify://shop_images/vs-code-icon.webp",
-                "width": 100,
+                "width": 50,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": ""
+              },
+              "blocks": {}
+            },
+            "icon_VWprRg": {
+              "type": "icon",
+              "name": "t:names.icon",
+              "settings": {
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/chat-gpt-icon.png",
+                "width": 50,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": ""
+              },
+              "blocks": {}
+            },
+            "icon_n3ahXw": {
+              "type": "icon",
+              "name": "t:names.icon",
+              "settings": {
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/slack-icon.webp",
+                "width": 50,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": ""
+              },
+              "blocks": {}
+            },
+            "icon_w4qDH8": {
+              "type": "icon",
+              "name": "t:names.icon",
+              "settings": {
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/claude-icon.webp",
+                "width": 50,
                 "link": "",
                 "open_in_new_tab": false,
                 "icon_color": ""
@@ -686,7 +725,10 @@
             "icon_Y7WrAJ",
             "icon_a3GRHK",
             "icon_p7YBgR",
-            "icon_gkKViz"
+            "icon_gkKViz",
+            "icon_VWprRg",
+            "icon_n3ahXw",
+            "icon_w4qDH8"
           ]
         }
       },
@@ -704,12 +746,180 @@
         "margin_top": 80,
         "margin_bottom": 80
       }
+    },
+    "ms_projects_xfn96A": {
+      "type": "ms-projects",
+      "blocks": {
+        "ms_projects_popup_dXWTee": {
+          "type": "_ms-projects-popup",
+          "name": "_ms-project-popup",
+          "settings": {
+            "index": "01",
+            "title": "Paris Pretty",
+            "tech_stack": "Shopify · Liquid · CSS · JavaScript",
+            "description": "<p>An advanced spoke calculator built with React and TypeScript that performs real-time geometric calculations for bicycle wheel building. The application handles complex hub and rim measurements, supporting multiple lacing patterns (radial, 1x-4x cross) while providing instant validation and error prevention. Delivers professional-grade accuracy matching industry tools used by bike shops worldwide.</p>",
+            "feature_1_label": "Framework",
+            "feature_1_value": "Shopify",
+            "feature_2_label": "Focus",
+            "feature_2_value": "Shopify theme dev (e-commerce)",
+            "feature_3_label": "",
+            "feature_3_value": "",
+            "image": "shopify://shop_images/paris-pretty-banner.png",
+            "image_overlay": "shopify://shop_images/paris-pretty.png",
+            "link": "https://parispretty.com/",
+            "code_link": ""
+          },
+          "blocks": {}
+        },
+        "ms_projects_popup_ggE7ad": {
+          "type": "_ms-projects-popup",
+          "name": "_ms-project-popup",
+          "settings": {
+            "index": "02",
+            "title": "Timber Dealers",
+            "tech_stack": "Shopify · Liquid · CSS · JavaScript",
+            "description": "<p>An advanced spoke calculator built with React and TypeScript that performs real-time geometric calculations for bicycle wheel building. The application handles complex hub and rim measurements, supporting multiple lacing patterns (radial, 1x-4x cross) while providing instant validation and error prevention. Delivers professional-grade accuracy matching industry tools used by bike shops worldwide.</p>",
+            "feature_1_label": "Framework",
+            "feature_1_value": "Shopify",
+            "feature_2_label": "Focus",
+            "feature_2_value": "Shopify theme dev (e-commerce)",
+            "feature_3_label": "",
+            "feature_3_value": "",
+            "image": "shopify://shop_images/timber-dealers-banner.jpg",
+            "image_overlay": "shopify://shop_images/timber-dealers.jpg",
+            "link": "",
+            "code_link": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ms_projects_popup_dXWTee",
+        "ms_projects_popup_ggE7ad"
+      ],
+      "name": "MS Projects",
+      "settings": {
+        "projects_title": "Project Journal",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "ms_experiences_GRYNLU": {
+      "type": "ms-experiences",
+      "blocks": {
+        "ms_exp_item_container_cLt7yX": {
+          "type": "_ms-exp-item-container",
+          "name": "_ms exp items",
+          "settings": {
+            "experience_title": "Shopify Front-End Developer",
+            "experience_tool": "Freelance",
+            "experience_description": "Jan 2025 - May 2026"
+          },
+          "blocks": {
+            "ms_exp_list_a8mhhd": {
+              "type": "_ms-exp-list",
+              "name": "MS Experience List",
+              "settings": {
+                "text_item": "<p>Shopify theme development front end developer that caters fashion and sales e commerce stores</p>"
+              },
+              "blocks": {}
+            },
+            "ms_exp_list_h6z6QL": {
+              "type": "_ms-exp-list",
+              "name": "MS Experience List",
+              "settings": {
+                "text_item": "<p>Shopify theme development front end developer that caters fashion and sales e commerce stores. Shopify theme development front end developer that caters fashion and sales e commerce stores</p>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "ms_exp_list_a8mhhd",
+            "ms_exp_list_h6z6QL"
+          ]
+        },
+        "ms_exp_item_container_emmRmi": {
+          "type": "_ms-exp-item-container",
+          "name": "_ms exp items",
+          "settings": {
+            "experience_title": "Frontend Shopify Developer",
+            "experience_tool": "oncliques",
+            "experience_description": "Jan 2024 - Jan 2025"
+          },
+          "blocks": {
+            "ms_exp_list_PiARMt": {
+              "type": "_ms-exp-list",
+              "name": "MS Experience List",
+              "settings": {
+                "text_item": "<p>Shopify theme development front end developer that caters fashion and sales e commerce stores</p>"
+              },
+              "blocks": {}
+            },
+            "ms_exp_list_zErNUH": {
+              "type": "_ms-exp-list",
+              "name": "MS Experience List",
+              "settings": {
+                "text_item": "<p>Shopify theme development front end developer that caters fashion and sales e commerce stores. Shopify theme development front end developer that caters fashion and sales e commerce stores</p>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "ms_exp_list_PiARMt",
+            "ms_exp_list_zErNUH"
+          ]
+        },
+        "ms_exp_item_container_YyzVhB": {
+          "type": "_ms-exp-item-container",
+          "name": "_ms exp items",
+          "settings": {
+            "experience_title": "Junior Shopify Developer",
+            "experience_tool": "Ip Tech",
+            "experience_description": "Dec 2023 - Aug 2024"
+          },
+          "blocks": {
+            "ms_exp_list_7VJVeB": {
+              "type": "_ms-exp-list",
+              "name": "MS Experience List",
+              "settings": {
+                "text_item": "<p>Shopify theme development front end developer that caters fashion and sales e commerce stores</p>"
+              },
+              "blocks": {}
+            },
+            "ms_exp_list_cYPJm6": {
+              "type": "_ms-exp-list",
+              "name": "MS Experience List",
+              "settings": {
+                "text_item": "<p>Shopify theme development front end developer that caters fashion and sales e commerce stores. Shopify theme development front end developer that caters fashion and sales e commerce stores</p>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "ms_exp_list_7VJVeB",
+            "ms_exp_list_cYPJm6"
+          ]
+        }
+      },
+      "block_order": [
+        "ms_exp_item_container_cLt7yX",
+        "ms_exp_item_container_emmRmi",
+        "ms_exp_item_container_YyzVhB"
+      ],
+      "name": "MS Experiences",
+      "settings": {
+        "projects_title": "Experience",
+        "margin_top": 80,
+        "margin_bottom": 80
+      }
     }
   },
   "order": [
     "ms_header_iL4cfX",
     "ms_main_banner_HgPXpV",
     "ms_about_Mf6cqe",
-    "ms_tools_tDaJLf"
+    "ms_tools_tDaJLf",
+    "ms_projects_xfn96A",
+    "ms_experiences_GRYNLU"
   ]
 }

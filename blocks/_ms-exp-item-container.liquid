@@ -1,0 +1,89 @@
+<style>
+    #shopify-block-{{ block.id }} {
+        border-bottom: 1px solid var(--color-border);
+        padding: 20px 0;
+    }
+
+    #shopify-block-{{ block.id }} .ms-experiences__head-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    #shopify-block-{{ block.id }} .ms-experiences__list {
+        list-style: square;
+        padding: 0 0 0 15px;
+    }
+
+    #shopify-block-{{ block.id }} .ms-experiences__title {
+        line-height: 1.2;
+    }
+
+</style>
+
+<div class="ms-experiences__head-container">
+    {% if block.settings.experience_title %}
+        <div class="ms-experiences__head__left-text">
+            <h3 class="ms-experiences__title">
+                {{ block.settings.experience_title }}
+            </h3>
+            <span class="ms-experiences__tool">
+                {{ block.settings.experience_tool }}
+            </span>
+        </div>
+    {% endif %}
+
+    {% if block.settings.experience_description %}
+        <div class="ms-experiences__heaad__right-text">
+            {{ block.settings.experience_description }}
+        </div>
+    {% endif %}
+
+
+</div>
+
+<div class="ms-experiences__body-container">
+    <ul class="ms-experiences__list">
+        {% content_for 'blocks' %}
+    </ul>
+</div>
+
+{%  schema  %}  
+    {
+        "name": "_ms experience container",
+        "settings": [
+            {
+                "type": "header",
+                "content": "block settings"
+            },
+            {
+                "type": "text",
+                "id": "experience_title",
+                "label": "experience_title",
+                "default": "Experience title"
+            },
+            {
+                "type": "text",
+                "id": "experience_tool",
+                "label": "experience_tool",
+                "default": "Experience tool"
+            },
+            {
+                "type": "text",
+                "id": "experience_description",
+                "label": "experience_description",
+                "default": "Experience date"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "_ms-exp-list"
+            }
+        ],
+        "presets": [
+            {
+                "name": "_ms exp items"
+            }
+        ]
+    }
+{% endschema %}

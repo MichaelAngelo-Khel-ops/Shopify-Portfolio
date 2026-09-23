@@ -1,0 +1,27 @@
+<style>
+    #shopify-block-{{ block.id }} {
+        margin-bottom: 4px;
+    }
+</style>
+
+<li class="ms-experience__list">
+    {{ block.settings.text_item }}
+</li>
+
+{%  schema  %}  
+    {
+        "name": "MS list item",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "text_item",
+                "label": "text_item",
+            }
+        ],
+        "presets": [
+            {
+                "name": "MS Experience List"
+            }
+        ]
+    }
+{% endschema %}
